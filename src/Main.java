@@ -14,7 +14,8 @@ public class Main {
             //find value you will need from map to compliment target and nums at index i
             int value = target - nums[i];
 
-            //if map does not contain value (we are looking for a compliment to target and nums at index i
+            //if map does not contain value (we are looking for a compliment to target and nums at index i) add value.
+            //access to map is in constant time
             if(!map.containsKey(value)){
                 map.put(nums[i], i);
             }else {//if value exist in map, you have found compliment
